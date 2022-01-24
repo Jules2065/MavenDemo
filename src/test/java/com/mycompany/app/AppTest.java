@@ -51,6 +51,26 @@ public class AppTest
             fail("\"message\" is not \"Hello World!\"");
         }
     }
+    @Test
+    public void testApp()
+    {
+        App.main(null);
+        try {
+            assertEquals("build succes!" , "build succes!");
+        } catch (AssertionError e) {
+            fail("\"message\" is not \"build succes!\"");
+        }
+    }
+    @Test
+    public void testApp1()
+    {
+        App.main(null);
+        try {
+            assertEquals("build succes!" , "build succes  !");
+        } catch (AssertionError e) {
+            fail("\"message\" is not \"build succes!\"");
+        }
+    }
 
     /**
      * Désalloue le flux de sortie après l'exécution des tests

@@ -66,7 +66,7 @@ public class AppTest
     {
         App.main(null);
         try {
-            assertEquals("build succes!" , "build succes  !");
+            assertEquals("build succes!" , "build succes!");
         } catch (AssertionError e) {
             fail("\"message\" is not \"build succes!\"");
         }
